@@ -1,0 +1,28 @@
+.button {
+	text-decoration: none;
+	font-size: 16px;
+	font-weight: 600;
+	color: #fff;
+	line-height: 50px;
+	padding: 15px 40px 15px 28px;
+	background: $color-secondary;
+	@include border-radius(4px);
+	transition: 0.5s;
+	position: relative;
+	padding-right: 30px;
+
+	&:hover {
+		background: $color-secondary - #222;
+	}
+}
+
+.button__arrow {
+	display: inline-block;
+    color: #fff;
+    width: 7px;
+    height: 16px;
+    font-size: 25px;
+    position: absolute;
+    top: 13px;
+    right: 14px;
+}

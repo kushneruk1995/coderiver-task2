@@ -1,0 +1,127 @@
+.accordion {
+	margin-top: 41px;
+    margin-left: -12px;
+}
+
+.accordion__content {
+    max-width: 1402px;
+	padding: 10px 5px 15px 30px;
+	display: none;
+	border-left: 1px solid #d4d4d4;
+	border-right: 1px solid #d4d4d4;
+	font-size: 18px;
+	font-weight: 300;
+	line-height: 30px;
+	transition: 0.5s;
+}
+
+.accordion__title,
+.accordion__icon {
+	display: inline-block;
+}
+
+.accordion__icon {
+	margin-left: auto;
+	transition: 0.5s;
+}
+
+.accordion__icon.active {
+	display: none;
+	transition: 0.5s;
+}
+
+.accordion__icon-line {
+	width: 21px;
+	height: 3px;
+	background-color: $color-link;
+	display: inline-block;
+	position: absolute;
+}
+
+.accordion__icon-vertical {
+	transform: rotate(90deg);
+}
+
+.accordion__link-small {
+	color: $color-link;
+	text-decoration: none;
+	transition: 0.5s;
+
+	&:hover {
+		color: $color-link - #222;
+		text-decoration: none;
+	}
+}
+
+.accordion__link-more span {
+	color: $color-secondary;
+}
+
+.useful {
+	margin-top: 50px;
+	margin-bottom: 50px;
+}
+
+.useful__title {
+	color: $font-color-primary;
+	font-size: 20px;
+	font-weight: 500;
+}
+
+.useful__link {
+	display: block;
+	color: $color-link;
+	font-size: 16px;
+	font-weight: 300;
+	text-decoration: none;
+
+	&:hover {
+		text-decoration: underline;
+		color: $color-link - #222;
+	}
+}
+
+.accordion__link {
+	position: relative;
+	font-size: 24px;
+	cursor: pointer;
+	text-decoration: none;
+	display: block;
+	max-width: 1340px;
+	padding: 25px 30px;
+	border-left: 1px solid #d4d4d4;
+	border-right: 1px solid #d4d4d4;
+	border-top: 1px solid #d4d4d4;
+	border-bottom: 1px solid transparent;
+	transition: 0.5s;
+	@include flexbox();
+	align-items: center;
+
+	&:hover {
+		background-color: #f6f6f6;
+		border-bottom: 1px solid #d4d4d4;
+	}
+}
+
+.accordion__link-last {
+	border-bottom: 1px solid #d4d4d4;
+}
+
+.accordion__content-last {
+	border-bottom: 1px solid #d4d4d4;
+}
+
+.accordion__link-last.accordion__link-is__active {
+	border-bottom: 1px solid transparent;
+} 
+
+.accordion__link-no__active {
+	background-color: #FFF;
+	@include border-radius(4px);
+	color: $color-link;
+}
+
+.accordion__link-is__active {	
+	color: black;
+	background-color: #FFF;
+}
